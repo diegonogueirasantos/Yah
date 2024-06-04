@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == '' " />
+  <ItemGroup>
+    <None Remove="StackExchange.Redis" />
+    <None Remove="AWSSDK.DynamoDBv2" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Repositories\" />
+    <None Remove="Repositories\AccountConfigurationRepository\" />
+    <None Remove="Repositories\IntegrationMonitorRepository\" />
+    <None Remove="Repositories\OrderRepository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\AccountConfigurationRepository\" />
+    <Folder Include="Repositories\IntegrationMonitorRepository\" />
+    <Folder Include="Repositories\OrderRepository\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.SimpleNotificationService" Version="3.7.100.9" />
+    <PackageReference Include="AWSSDK.SQS" Version="3.7.100.9" />
+    <PackageReference Include="StackExchange.Redis" Version="2.6.70" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.100.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Yah.Hub.Common\Yah.Hub.Common.csproj" />
+    <ProjectReference Include="..\Yah.Hub.Domain\Yah.Hub.Domain.csproj" />
+  </ItemGroup>
+</Project>

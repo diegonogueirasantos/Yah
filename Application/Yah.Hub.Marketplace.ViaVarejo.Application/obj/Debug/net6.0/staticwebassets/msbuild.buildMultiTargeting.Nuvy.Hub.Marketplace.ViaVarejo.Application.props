@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Yah.Hub.Marketplace.ViaVarejo.Application.props" />
+</Project>

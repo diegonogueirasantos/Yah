@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{CB808F6D-DB23-403B-B1EA-4CE9E312A0FA}|B2W_TST">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.CrossCutting.Yah.Hub.Common PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Presentation.Yah.Hub.B2W.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <DisabledProjects>
+    <String>Application/Yah.Hub.Marketplace.LeroyMerlin.Application/Yah.Hub.Marketplace.LeroyMerlin.Application/Yah.Hub.Marketplace.LeroyMerlin.Application.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../Applications/Visual Studio.app/Contents/MonoBundle/AddIns/MonoDevelop.Docker/MSBuild/Sdks/Microsoft.Docker.Sdk/build/Microsoft.VisualStudio.Docker.Compose.targets">
+    <Files>
+      <File FileName="Presentation/Yah.Hub.LeroyMerlin.Api/Program.cs" Line="3" Column="27" />
+      <File FileName="../../../../Applications/Visual Studio.app/Contents/MonoBundle/AddIns/MonoDevelop.Docker/MSbuild/Sdks/Microsoft.Docker.Sdk/build/Microsoft.VisualStudio.Docker.Compose.targets" Line="202" Column="5" />
+      <File FileName="docker-compose.yml" Line="49" Column="63" />
+      <File FileName="docker-compose.override.yml" Line="53" Column="13" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Yah.Hub" expanded="True" selected="True">
+            <Node name="Application" expanded="True" />
+            <Node name="docker-compose" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>

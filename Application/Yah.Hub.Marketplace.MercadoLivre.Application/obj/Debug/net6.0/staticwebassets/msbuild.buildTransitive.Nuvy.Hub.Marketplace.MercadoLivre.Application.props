@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/Yah.Hub.Marketplace.MercadoLivre.Application.props" />
+</Project>

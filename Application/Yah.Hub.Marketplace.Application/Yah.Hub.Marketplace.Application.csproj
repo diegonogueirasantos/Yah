@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Catalog\" />
+    <None Remove="Sales\" />
+    <None Remove="Category\" />
+    <None Remove="Authentication\" />
+    <None Remove="Repositories\" />
+    <None Remove="Services\" />
+    <None Remove="Repositories\Category\" />
+    <None Remove="Repositories\Announcement\" />
+    <None Remove="Properties\launchSettings.json" />
+    <None Remove="Notification\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sales\" />
+    <Folder Include="Category\" />
+    <Folder Include="Authentication\" />
+    <Folder Include="Repositories\Category\" />
+    <Folder Include="Repositories\Announcement\" />
+    <Folder Include="Notification\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.SimpleNotificationService" Version="3.7.100.9" />
+    <PackageReference Include="AWSSDK.SQS" Version="3.7.100.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CrossCutting\Yah.Hub.Application\Yah.Hub.Application.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CrossCutting\Yah.Hub.Common\Yah.Hub.Common.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CrossCutting\Yah.Hub.Data\Yah.Hub.Data.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CrossCutting\Yah.Hub.Domain\Yah.Hub.Domain.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

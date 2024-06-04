@@ -1,0 +1,57 @@
+version: '3.4'
+
+services:
+  Yah.hub.mercadolivre.api:
+    image: ${DOCKER_REGISTRY-}Yahhubmercadolivre
+    build:
+      context: .
+      dockerfile: Presentation/Yah.Hub.MercadoLivre.Api/Dockerfile
+
+  Yah.hub.scheduler:
+    image: ${DOCKER_REGISTRY-}Yahhub
+    build:
+      context: .
+      dockerfile: Scheduler/Yah.Hub.Scheduler/Dockerfile
+
+
+  Yah.hub.magalu.api:
+    image: ${DOCKER_REGISTRY-}Yahhubmagalu
+    build:
+      context: .
+      dockerfile: Presentation/Yah.Hub.Magalu.Api/Dockerfile
+
+
+  Yah.hub.b2w.api:
+    image: ${DOCKER_REGISTRY-}Yahhubb2w
+    build:
+      context: .
+      dockerfile: Presentation/Yah.Hub.B2W.Api/Dockerfile
+
+
+  Yah.hub.integrationmonitor.api:
+    image: ${DOCKER_REGISTRY-}Yahhubintegrationmonitor
+    build:
+      context: .
+      dockerfile: Presentation/Yah.Hub.IntegrationMonitor.Api/Dockerfile
+
+
+  Yah.hub.broker.api:
+    image: ${DOCKER_REGISTRY-}Yahhubbroker
+    build:
+      context: .
+      dockerfile: Presentation/Yah.Hub.Broker.Api/Dockerfile
+
+
+  Yah.hub.netshoes.api:
+    image: ${DOCKER_REGISTRY-}Yahhubnetshoes
+    build:
+      context: .
+      dockerfile: Presentation/Yah.Hub.Netshoes.Api/Dockerfile
+
+
+  Yah.hub.viavarejo.api:
+    image: ${DOCKER_REGISTRY-}Yahhubviavarejo
+    build:
+      context: .
+      dockerfile: Presentation/Yah.Hub.ViaVarejo.Api/Dockerfile
+

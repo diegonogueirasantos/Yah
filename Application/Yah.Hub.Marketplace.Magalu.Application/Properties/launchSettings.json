@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Yah.Hub.Marketplace.Magalu.Application": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:51147;http://localhost:51148",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

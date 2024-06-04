@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Yah.Hub.IntegrationMonitor.Api.props" />
+</Project>

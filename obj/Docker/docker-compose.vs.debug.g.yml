@@ -1,0 +1,217 @@
+version: '3.4'
+
+services:
+  Yah.hub.b2w.api:
+    image: Yahhubb2w:dev
+    container_name: Yah.Hub.B2W.Api
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Yah.Hub.B2W.Api"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
+    volumes:
+      - /Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync/Presentation/Yah.Hub.B2W.Api:/app
+      - /Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync:/src
+      - /Users/demianbibiano/vsdbg/vs2017u5:/remote_debugger:rw
+      - /Users/demianbibiano/.nuget/packages/:/root/.nuget/packages:ro
+      - /usr/local/share/dotnet/sdk/NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"/app/bin/Debug/net6.0/Yah.Hub.B2W.Api.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+  Yah.hub.broker.api:
+    image: Yahhubbroker:dev
+    container_name: Yah.Hub.Broker.Api
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Yah.Hub.Broker.Api"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
+    volumes:
+      - /Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync/Presentation/Yah.Hub.Broker.Api:/app
+      - /Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync:/src
+      - /Users/demianbibiano/vsdbg/vs2017u5:/remote_debugger:rw
+      - /Users/demianbibiano/.nuget/packages/:/root/.nuget/packages:ro
+      - /usr/local/share/dotnet/sdk/NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"/app/bin/Debug/net6.0/Yah.Hub.Broker.Api.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
+  Yah.hub.integrationmonitor.api:
+    image: Yahhubintegrationmonitor:dev
+    container_name: Yah.Hub.IntegrationMonitor.Api
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Yah.Hub.IntegrationMonitor.Api"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
+    volumes:
+      - /Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync/Presentation/Yah.Hub.IntegrationMonitor.Api:/app
+      - /Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync:/src
+      - /Users/demianbibiano/vsdbg/vs2017u5:/remote_debugger:rw
+      - /Users/demianbibiano/.nuget/packages/:/root/.nuget/packages:ro
+      - /usr/local/share/dotnet/sdk/NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"/app/bin/Debug/net6.0/Yah.Hub.IntegrationMonitor.Api.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
+  Yah.hub.magalu.api:
+    image: Yahhubmagalu:dev
+    container_name: Yah.Hub.Magalu.Api
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Yah.Hub.Magalu.Api"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
+    volumes:
+      - /Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync/Presentation/Yah.Hub.Magalu.Api:/app
+      - /Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync:/src
+      - /Users/demianbibiano/vsdbg/vs2017u5:/remote_debugger:rw
+      - /Users/demianbibiano/.nuget/packages/:/root/.nuget/packages:ro
+      - /usr/local/share/dotnet/sdk/NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"/app/bin/Debug/net6.0/Yah.Hub.Magalu.Api.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
+  Yah.hub.mercadolivre.api:
+    image: Yahhubmercadolivre:dev
+    container_name: Yah.Hub.MercadoLivre.Api
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Yah.Hub.MercadoLivre.Api"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
+    volumes:
+      - /Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync/Presentation/Yah.Hub.MercadoLivre.Api:/app
+      - /Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync:/src
+      - /Users/demianbibiano/vsdbg/vs2017u5:/remote_debugger:rw
+      - /Users/demianbibiano/.nuget/packages/:/root/.nuget/packages:ro
+      - /usr/local/share/dotnet/sdk/NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"/app/bin/Debug/net6.0/Yah.Hub.MercadoLivre.Api.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
+  Yah.hub.netshoes.api:
+    image: Yahhubnetshoes:dev
+    container_name: Yah.Hub.Netshoes.Api
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Yah.Hub.Netshoes.Api"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
+    volumes:
+      - /Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync/Presentation/Yah.Hub.Netshoes.Api:/app
+      - /Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync:/src
+      - /Users/demianbibiano/vsdbg/vs2017u5:/remote_debugger:rw
+      - /Users/demianbibiano/.nuget/packages/:/root/.nuget/packages:ro
+      - /usr/local/share/dotnet/sdk/NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"/app/bin/Debug/net6.0/Yah.Hub.Netshoes.Api.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
+  Yah.hub.scheduler:
+    image: Yahhub:dev
+    container_name: Yah.Hub.Scheduler
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Yah.Hub.Scheduler"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
+    volumes:
+      - /Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync/Scheduler/Yah.Hub.Scheduler:/app
+      - /Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync:/src
+      - /Users/demianbibiano/vsdbg/vs2017u5:/remote_debugger:rw
+      - /Users/demianbibiano/.nuget/packages/:/root/.nuget/packages:ro
+      - /usr/local/share/dotnet/sdk/NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"/app/bin/Debug/net6.0/Yah.Hub.Scheduler.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
+
+  Yah.hub.viavarejo.api:
+    image: Yahhubviavarejo:dev
+    container_name: Yah.Hub.ViaVarejo.Api
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Yah.Hub.ViaVarejo.Api"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
+    volumes:
+      - /Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync/Presentation/Yah.Hub.ViaVarejo.Api:/app
+      - /Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync:/src
+      - /Users/demianbibiano/vsdbg/vs2017u5:/remote_debugger:rw
+      - /Users/demianbibiano/.nuget/packages/:/root/.nuget/packages:ro
+      - /usr/local/share/dotnet/sdk/NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"/app/bin/Debug/net6.0/Yah.Hub.ViaVarejo.Api.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true

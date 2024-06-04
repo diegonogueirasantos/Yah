@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "Scheduler_TST": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:80/swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "TST",
+        "HTTP_PORT": "80"
+      }
+    },
+    "Scheduler_HLG": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:80/swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "HLG",
+        "HTTP_PORT": "80"
+      }
+    },
+    "Scheduler_PRD": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:80/swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "PRD",
+        "HTTP_PORT": "80"
+      }
+    },
+    "Yah.Hub.Scheduler": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:15047",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

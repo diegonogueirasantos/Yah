@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DockerComposeProjectPath>../../docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'BROKER_API_TST' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'BROKER_API_HLG' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'BROKER_API_PRD' " />
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\CrossCutting\Yah.Hub.Application\Yah.Hub.Application.csproj" />
+    <ProjectReference Include="..\..\CrossCutting\Yah.Hub.Common\Yah.Hub.Common.csproj" />
+    <ProjectReference Include="..\Yah.Hub.Api.Application\Yah.Hub.Api.Application.csproj" />
+  </ItemGroup>
+
+</Project>

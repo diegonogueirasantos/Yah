@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DockerComposeProjectPath>../../docker-compose.dcproj</DockerComposeProjectPath>
+    <UserSecretsId>2ecf897c-b96c-4c6d-b3f8-de70072d7d8d</UserSecretsId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'MercadoLivre_TST' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'MercadoLivre_HLG' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'MercadoLivre_PRD' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'MercadoLivre_DEV' " />
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\Yah.Hub.Marketplace.MercadoLivre.Application\Yah.Hub.Marketplace.MercadoLivre.Application.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Yah.Hub.Api.Application\Yah.Hub.Api.Application.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CrossCutting\Yah.Hub.Common\Yah.Hub.Common.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

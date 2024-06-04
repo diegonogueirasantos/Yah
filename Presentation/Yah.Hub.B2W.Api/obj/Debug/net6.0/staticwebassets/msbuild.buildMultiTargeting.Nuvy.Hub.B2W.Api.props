@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Yah.Hub.B2W.Api.props" />
+</Project>

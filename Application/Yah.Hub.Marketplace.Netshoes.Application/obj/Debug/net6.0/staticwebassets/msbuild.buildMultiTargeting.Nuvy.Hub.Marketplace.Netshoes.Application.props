@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Yah.Hub.Marketplace.Netshoes.Application.props" />
+</Project>

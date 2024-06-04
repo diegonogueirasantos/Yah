@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <DockerComposeProjectPath>../../docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'LEROYMERLIN_TST' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'LEROYMERLIN_HLG' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'LEROYMERLIN_PRD' " />
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="4.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\Yah.Hub.Marketplace.LeroyMerlin.Application\Yah.Hub.Marketplace.LeroyMerlin.Application\Yah.Hub.Marketplace.LeroyMerlin.Application.csproj" />
+    <ProjectReference Include="..\Yah.Hub.Api.Application\Yah.Hub.Api.Application.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Yah.Hub.Marketplace.Application": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:40999",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

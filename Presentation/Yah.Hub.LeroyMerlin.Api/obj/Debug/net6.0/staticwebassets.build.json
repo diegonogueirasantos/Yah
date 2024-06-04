@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "Hash": "WzXIwypxRSnxq1Mi4WpeP9KfCrf7ofDfsYQCE5Ol714=",
+  "Source": "Yah.Hub.LeroyMerlin.Api",
+  "BasePath": "_content/Yah.Hub.LeroyMerlin.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "/Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync/Application/Yah.Hub.Marketplace.Application/Yah.Hub.Marketplace.Application.csproj",
+      "Version": 2,
+      "Source": "Yah.Hub.Marketplace.Application",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    },
+    {
+      "Identity": "/Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync/Application/Yah.Hub.Marketplace.LeroyMerlin.Application/Yah.Hub.Marketplace.LeroyMerlin.Application/Yah.Hub.Marketplace.LeroyMerlin.Application.csproj",
+      "Version": 2,
+      "Source": "Yah.Hub.Marketplace.LeroyMerlin.Application",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    },
+    {
+      "Identity": "/Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync/CrossCutting/Yah.Hub.Application/Yah.Hub.Application.csproj",
+      "Version": 2,
+      "Source": "Yah.Hub.Application",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    },
+    {
+      "Identity": "/Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync/CrossCutting/Yah.Hub.Common/Yah.Hub.Common.csproj",
+      "Version": 2,
+      "Source": "Yah.Hub.Common",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    },
+    {
+      "Identity": "/Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync/CrossCutting/Yah.Hub.Data/Yah.Hub.Data.csproj",
+      "Version": 2,
+      "Source": "Yah.Hub.Data",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    },
+    {
+      "Identity": "/Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync/CrossCutting/Yah.Hub.Domain/Yah.Hub.Domain.csproj",
+      "Version": 2,
+      "Source": "Yah.Hub.Domain",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    },
+    {
+      "Identity": "/Users/demianbibiano/Library/Mobile Documents/com~apple~CloudDocs/Documents/projects/Yah-hub-marketplace.nosync/Presentation/Yah.Hub.Api.Application/Yah.Hub.Api.Application.csproj",
+      "Version": 2,
+      "Source": "Yah.Hub.Api.Application",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

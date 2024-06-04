@@ -1,0 +1,240 @@
+{
+  "fields": [
+    {
+      "Name": "Id",
+      "DisplayName": "Código do produto",
+      "DefaultHelpMessage": "Sku do produto",
+      "FieldGroupName": "Dados básicos",
+      "FieldType": "IStringTypeValidator",
+      "FieldLocation": "Product",
+      "IsRequired": true,
+      "CanMap": false,
+      "Validations": [
+        {
+          "ValidationType": "IMandatoryFieldValidator",
+          "DisplayName": "Campo obrigatório."
+        },
+        {
+          "ValidationType": "ILessThanValidator",
+          "DisplayName": "Tamanho máximo de 25 caracteres.",
+          "Params": { "LessThan": 25 }
+        }
+      ]
+    },
+    {
+      "Name": "Name",
+      "DisplayName": "Nome do produto",
+      "DefaultHelpMessage": "Nome do produto",
+      "FieldGroupName": "Dados básicos",
+      "FieldType": "IStringTypeValidator",
+      "FieldLocation": "Product",
+      "IsRequired": true,
+      "CanMap": true,
+      "Validations": [
+        {
+          "ValidationType": "IMandatoryFieldValidator",
+          "DisplayName": "Campo obrigatório."
+        },
+        {
+          "ValidationType": "ILessThanValidator",
+          "DisplayName": "Tamanho máximo de 100 caracteres.",
+          "Params": { "LessThan": 100 }
+        }
+      ]
+    },
+    {
+      "Name": "Description",
+      "DisplayName": "Descrição do produto",
+      "DefaultHelpMessage": "Descrição do produto",
+      "FieldGroupName": "Dados básicos",
+      "FieldType": "IStringTypeValidator",
+      "FieldLocation": "Product",
+      "IsRequired": true,
+      "CanMap": true,
+      "Validations": [
+        {
+          "ValidationType": "IMandatoryFieldValidator",
+          "DisplayName": "Campo obrigatório."
+        }
+      ]
+    },
+    {
+      "Name": "Dimension.Weight",
+      "DisplayName": "Peso do produto",
+      "DefaultHelpMessage": "Peso do produto",
+      "FieldGroupName": "Dados de dimensões",
+      "FieldType": "IDecimalTypeValidator",
+      "FieldLocation": "Sku",
+      "IsRequired": true,
+      "CanMap": true,
+      "Validations": [
+        {
+          "ValidationType": "IMandatoryFieldValidator",
+          "DisplayName": "Campo obrigatório."
+        },
+        {
+          "ValidationType": "IGreaterThanValidator",
+          "DisplayName": "Número maior que 0.",
+          "Params": { "GreaterThan": 0 }
+        }
+      ]
+    },
+    {
+      "Name": "Dimension.Height",
+      "DisplayName": "Altura do produto",
+      "DefaultHelpMessage": "Altura do produto",
+      "FieldGroupName": "Dados de dimensões",
+      "FieldType": "IDecimalTypeValidator",
+      "FieldLocation": "Sku",
+      "IsRequired": true,
+      "CanMap": true,
+      "Validations": [
+        {
+          "ValidationType": "IMandatoryFieldValidator",
+          "DisplayName": "Campo obrigatório."
+        },
+        {
+          "ValidationType": "IGreaterThanValidator",
+          "DisplayName": "Número maior que 0.",
+          "Params": { "GreaterThan": 0 }
+        }
+      ]
+    },
+    {
+      "Name": "Dimension.Width",
+      "DisplayName": "Largura do produto",
+      "DefaultHelpMessage": "Largura do produto",
+      "FieldGroupName": "Dados de dimensões",
+      "FieldType": "IDecimalTypeValidator",
+      "FieldLocation": "Sku",
+      "IsRequired": true,
+      "CanMap": true,
+      "Validations": [
+        {
+          "ValidationType": "IMandatoryFieldValidator",
+          "DisplayName": "Campo obrigatório."
+        },
+        {
+          "ValidationType": "IGreaterThanValidator",
+          "DisplayName": "Número maior que 0.",
+          "Params": { "GreaterThan": 0 }
+        }
+      ]
+    },
+    {
+      "Name": "Dimension.Length",
+      "DisplayName": "Profundidade do produto",
+      "DefaultHelpMessage": "Profundidade do produto",
+      "FieldGroupName": "Dados de dimensões",
+      "FieldType": "IDecimalTypeValidator",
+      "FieldLocation": "Sku",
+      "IsRequired": true,
+      "CanMap": true,
+      "Validations": [
+        {
+          "ValidationType": "IMandatoryFieldValidator",
+          "DisplayName": "Campo obrigatório."
+        },
+        {
+          "ValidationType": "IGreaterThanValidator",
+          "DisplayName": "Número maior que 0.",
+          "Params": { "GreaterThan": 0 }
+        }
+      ]
+    },
+    {
+      "Name": "Id",
+      "DisplayName": "Código da variação",
+      "DefaultHelpMessage": "Sku da variação",
+      "FieldGroupName": "Dados básicos",
+      "FieldType": "IStringTypeValidator",
+      "FieldLocation": "Sku",
+      "IsRequired": true,
+      "CanMap": false,
+      "Validations": [
+        {
+          "ValidationType": "IMandatoryFieldValidator",
+          "DisplayName": "Campo obrigatório."
+        },
+        {
+          "ValidationType": "ILessThanValidator",
+          "DisplayName": "Tamanho máximo de 25 caracteres.",
+          "Params": { "LessThan": 25 }
+        }
+      ]
+    },
+    {
+      "Name": "Ean",
+      "DisplayName": "EAN",
+      "DefaultHelpMessage": "EAN do SKU",
+      "FieldGroupName": "Identificadores",
+      "FieldType": "IStringTypeValidator",
+      "FieldLocation": "Sku",
+      "IsRequired": false,
+      "CanMap": true,
+      "Validations": [
+        {
+          "ValidationType": "IMandatoryFieldValidator",
+          "CanOptOut": true,
+          "DisplayName": "Campo obrigatório."
+        },
+        {
+          "ValidationType": "ILessThanValidator",
+          "DisplayName": "Tamanho máximo de 14 caracteres.",
+          "Params": { "LessThan": 14 }
+        }
+      ]
+    },
+    {
+      "Name": "Images",
+      "DisplayName": "Imagens do produto",
+      "DefaultHelpMessage": "Imagem do produto",
+      "FieldGroupName": "Imagem",
+      "FieldType": "IImageListTypeValidator",
+      "FieldLocation": "Product",
+      "IsRequired": false,
+      "CanMap": false,
+      "Validations": [
+        {
+          "ValidationType": "IMandatoryFieldValidator",
+          "DisplayName": "Campo obrigatório."
+        },
+        {
+          "ValidationType": "IImageListLengthValidator",
+          "DisplayName": "Mínimo de 1 imagem no produto.",
+          "Params": {
+            "MinLength": 1
+          }
+        },
+        {
+          "ValidationType": "IImageSizeValidator",
+          "DisplayName": "Altura mínima de 350px largura mínima de 350px.",
+          "Params": {
+            "MinWidth": 350,
+            "MinHeight": 350
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Images",
+      "DisplayName": "Imagens da variação",
+      "DefaultHelpMessage": "Imagem da variação",
+      "FieldGroupName": "Imagem",
+      "FieldType": "IImageListTypeValidator",
+      "FieldLocation": "Sku",
+      "IsRequired": false,
+      "CanMap": false,
+      "Validations": [
+        {
+          "ValidationType": "IImageSizeValidator",
+          "DisplayName": "Altura mínima de 350px largura mínima de 350px.",
+          "Params": {
+            "MinWidth": 350,
+            "MinHeight": 350
+          }
+        }
+      ]
+    }
+  ]
+}

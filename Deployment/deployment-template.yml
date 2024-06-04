@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: marketplace-${ENVIRONMENTLOWER}-${MARKETPLACE}
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  selector:
+    matchLabels:
+      app: marketplace-${ENVIRONMENTLOWER}-${MARKETPLACE}
+  template:
+    metadata:
+      labels:
+        app: marketplace-${ENVIRONMENTLOWER}-${MARKETPLACE}
+    spec:
+      containers:
+        - name: Yah-hub-marketplace-${MARKETPLACE}-container
+          image: demianbibiano/Yah.hub.marketplace.${MARKETPLACE}:${ENVIRONMENTLOWER}-latest
+          securityContext:
+            privileged: true # Processes in privileged containers are essentially equivalent to root on the host.
+          ports:
+            - containerPort: 80
+              name: http
+            - containerPort: 443
+              name: https
+          imagePullPolicy: Always
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: ${ENVIRONMENT}
+            - name: HTTP_PORT
+              value: '80'
+            #- name: HTTPS_PORT
+            #  value: '443'
+          resources:
+            limits:
+              memory: '512Mi'
+              cpu: '300m'
+      imagePullSecrets:
+        - name: regcred

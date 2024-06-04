@@ -1,0 +1,171 @@
+{
+  "fields": [
+    {
+      "Name": "Sku",
+      "DisplayName": "Código do produto",
+      "DefaultHelpMessage": "Sku do produto",
+      "FieldGroupName": "Dados básicos",
+      "FieldType": "IStringTypeValidator",
+      "FieldLocation": "Product",
+      "IsRequired": true,
+      "CanMap": false,
+      "Validations": [
+      ]
+    },
+    {
+      "Name": "Name",
+      "DisplayName": "Nome do produto",
+      "DefaultHelpMessage": "Nome do produto",
+      "FieldGroupName": "Dados básicos",
+      "FieldType": "IStringTypeValidator",
+      "FieldLocation": "Product",
+      "IsRequired": true,
+      "CanMap": true,
+      "Validations": [
+      ]
+    },
+    {
+      "Name": "Description",
+      "DisplayName": "Descrição do produto",
+      "DefaultHelpMessage": "Descrição do produto",
+      "FieldGroupName": "Dados básicos",
+      "FieldType": "IStringTypeValidator",
+      "FieldLocation": "Product",
+      "IsRequired": true,
+      "CanMap": true,
+      "Validations": [
+      ]
+    },
+    {
+      "Name": "Brand",
+      "DisplayName": "Marca do produto",
+      "DefaultHelpMessage": "Caso a marca não seja mapeada, será enviado a do produto",
+      "FieldGroupName": "Dados básicos",
+      "FieldType": "IStringTypeValidator",
+      "FieldLocation": "Product",
+      "IsRequired": true,
+      "CanMap": true,
+      "Validations": [
+      ]
+    },
+    {
+      "Name": "Gender",
+      "DisplayName": "Gênero do produto",
+      "DefaultHelpMessage": "Gênero do produto",
+      "FieldGroupName": "Dados básicos",
+      "FieldType": "IStringTypeValidator",
+      "FieldLocation": "Product",
+      "IsRequired": false,
+      "CanMap": true,
+      "Validations": [
+      ]
+    },
+    {
+      "Name": "Dimensions.Weight",
+      "DisplayName": "Peso do produto",
+      "DefaultHelpMessage": "Peso do produto",
+      "FieldGroupName": "Dados de dimensões",
+      "FieldType": "IDecimalTypeValidator",
+      "FieldLocation": "Sku",
+      "IsRequired": true,
+      "CanMap": true,
+      "Validations": [
+      ]
+    },
+    {
+      "Name": "Dimensions.Height",
+      "DisplayName": "Altura do produto",
+      "DefaultHelpMessage": "Altura do produto",
+      "FieldGroupName": "Dados de dimensões",
+      "FieldType": "IDecimalTypeValidator",
+      "FieldLocation": "Sku",
+      "IsRequired": true,
+      "CanMap": true,
+      "Validations": [
+      ]
+    },
+    {
+      "Name": "Dimensions.Width",
+      "DisplayName": "Largura do produto",
+      "DefaultHelpMessage": "Largura do produto",
+      "FieldGroupName": "Dados de dimensões",
+      "FieldType": "IDecimalTypeValidator",
+      "FieldLocation": "Sku",
+      "IsRequired": true,
+      "CanMap": true,
+      "Validations": [
+      ]
+    },
+    {
+      "Name": "Dimensions.Length",
+      "DisplayName": "Profundidade do produto",
+      "DefaultHelpMessage": "Profundidade do produto",
+      "FieldGroupName": "Dados de dimensões",
+      "FieldType": "IDecimalTypeValidator",
+      "FieldLocation": "Sku",
+      "IsRequired": true,
+      "CanMap": true,
+      "Validations": [
+      ]
+    },
+    {
+      "Name": "Nbm",
+      "DisplayName": "NBM",
+      "DefaultHelpMessage": "NBM do Produto",
+      "FieldGroupName": "Identificadores",
+      "FieldType": "IStringTypeValidator",
+      "FieldLocation": "Product",
+      "IsRequired": false,
+      "CanMap": true,
+      "Validations": []
+    },
+    {
+      "Name": "Sku",
+      "DisplayName": "Código da variação",
+      "DefaultHelpMessage": "Sku da variação",
+      "FieldGroupName": "Dados básicos",
+      "FieldType": "IStringTypeValidator",
+      "FieldLocation": "Sku",
+      "IsRequired": true,
+      "CanMap": false,
+      "Validations": [
+      ]
+    },
+    {
+      "Name": "Ean",
+      "DisplayName": "EAN",
+      "DefaultHelpMessage": "EAN do SKU",
+      "FieldGroupName": "Identificadores",
+      "FieldType": "IStringTypeValidator",
+      "FieldLocation": "Sku",
+      "IsRequired": false,
+      "CanMap": true,
+      "Validations": [
+      ]
+    },
+    {
+      "Name": "Images",
+      "DisplayName": "Imagens do produto",
+      "DefaultHelpMessage": "Imagem do produto",
+      "FieldGroupName": "Imagem",
+      "FieldType": "IImageListTypeValidator",
+      "FieldLocation": "Product",
+      "IsRequired": false,
+      "CanMap": false,
+      "Validations": [
+      ]
+    },
+    {
+      "Name": "Images",
+      "DisplayName": "Imagens da variação",
+      "DefaultHelpMessage": "Imagem da variação",
+      "FieldGroupName": "Imagem",
+      "FieldType": "IImageListTypeValidator",
+      "FieldLocation": "Sku",
+      "IsRequired": false,
+      "CanMap": false,
+      "Validations": [
+      ]
+    }
+  ]
+}

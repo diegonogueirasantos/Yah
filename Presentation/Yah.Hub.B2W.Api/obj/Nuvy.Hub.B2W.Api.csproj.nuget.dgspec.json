@@ -1,0 +1,749 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Presentation/Yah.Hub.B2W.Api/Yah.Hub.B2W.Api.csproj": {}
+  },
+  "projects": {
+    "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Application/Yah.Hub.Marketplace.Application/Yah.Hub.Marketplace.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Application/Yah.Hub.Marketplace.Application/Yah.Hub.Marketplace.Application.csproj",
+        "projectName": "Yah.Hub.Marketplace.Application",
+        "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Application/Yah.Hub.Marketplace.Application/Yah.Hub.Marketplace.Application.csproj",
+        "packagesPath": "/Users/diegonogueiradossantos/.nuget/packages/",
+        "outputPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Application/Yah.Hub.Marketplace.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/diegonogueiradossantos/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Application/Yah.Hub.Application.csproj": {
+                "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Application/Yah.Hub.Application.csproj"
+              },
+              "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Common/Yah.Hub.Common.csproj": {
+                "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Common/Yah.Hub.Common.csproj"
+              },
+              "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Data/Yah.Hub.Data.csproj": {
+                "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Data/Yah.Hub.Data.csproj"
+              },
+              "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Domain/Yah.Hub.Domain.csproj": {
+                "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Domain/Yah.Hub.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AWSSDK.SQS": {
+              "target": "Package",
+              "version": "[3.7.100.9, )"
+            },
+            "AWSSDK.SimpleNotificationService": {
+              "target": "Package",
+              "version": "[3.7.100.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Application/Yah.Hub.Marketplace.B2W.Application/Yah.Hub.Marketplace.B2W.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Application/Yah.Hub.Marketplace.B2W.Application/Yah.Hub.Marketplace.B2W.Application.csproj",
+        "projectName": "Yah.Hub.Marketplace.B2W.Application",
+        "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Application/Yah.Hub.Marketplace.B2W.Application/Yah.Hub.Marketplace.B2W.Application.csproj",
+        "packagesPath": "/Users/diegonogueiradossantos/.nuget/packages/",
+        "outputPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Application/Yah.Hub.Marketplace.B2W.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/diegonogueiradossantos/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Common/Yah.Hub.Common.csproj": {
+                "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Common/Yah.Hub.Common.csproj"
+              },
+              "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Presentation/Yah.Hub.Api.Application/Yah.Hub.Api.Application.csproj": {
+                "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Presentation/Yah.Hub.Api.Application/Yah.Hub.Api.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Application/Yah.Hub.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Application/Yah.Hub.Application.csproj",
+        "projectName": "Yah.Hub.Application",
+        "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Application/Yah.Hub.Application.csproj",
+        "packagesPath": "/Users/diegonogueiradossantos/.nuget/packages/",
+        "outputPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/diegonogueiradossantos/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Common/Yah.Hub.Common.csproj": {
+                "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Common/Yah.Hub.Common.csproj"
+              },
+              "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Data/Yah.Hub.Data.csproj": {
+                "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Data/Yah.Hub.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AWSSDK.Extensions.NETCore.Setup": {
+              "target": "Package",
+              "version": "[3.7.2, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Common/Yah.Hub.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Common/Yah.Hub.Common.csproj",
+        "projectName": "Yah.Hub.Common",
+        "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Common/Yah.Hub.Common.csproj",
+        "packagesPath": "/Users/diegonogueiradossantos/.nuget/packages/",
+        "outputPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Common/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/diegonogueiradossantos/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AWSSDK.DynamoDBv2": {
+              "target": "Package",
+              "version": "[3.7.100.2, )"
+            },
+            "AWSSDK.SQS": {
+              "target": "Package",
+              "version": "[3.7.100.9, )"
+            },
+            "AWSSDK.SimpleNotificationService": {
+              "target": "Package",
+              "version": "[3.7.100.9, )"
+            },
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[7.0.1, )"
+            },
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[12.1.2, )"
+            },
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "NEST": {
+              "target": "Package",
+              "version": "[7.10.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Serilog.Sinks.Debug": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Serilog.Sinks.Elasticsearch": {
+              "target": "Package",
+              "version": "[8.4.1, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.70, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Data/Yah.Hub.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Data/Yah.Hub.Data.csproj",
+        "projectName": "Yah.Hub.Data",
+        "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Data/Yah.Hub.Data.csproj",
+        "packagesPath": "/Users/diegonogueiradossantos/.nuget/packages/",
+        "outputPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Data/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/diegonogueiradossantos/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Common/Yah.Hub.Common.csproj": {
+                "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Common/Yah.Hub.Common.csproj"
+              },
+              "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Domain/Yah.Hub.Domain.csproj": {
+                "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Domain/Yah.Hub.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AWSSDK.DynamoDBv2": {
+              "target": "Package",
+              "version": "[3.7.100.3, )"
+            },
+            "AWSSDK.SQS": {
+              "target": "Package",
+              "version": "[3.7.100.9, )"
+            },
+            "AWSSDK.SimpleNotificationService": {
+              "target": "Package",
+              "version": "[3.7.100.9, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.6.70, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Domain/Yah.Hub.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Domain/Yah.Hub.Domain.csproj",
+        "projectName": "Yah.Hub.Domain",
+        "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Domain/Yah.Hub.Domain.csproj",
+        "packagesPath": "/Users/diegonogueiradossantos/.nuget/packages/",
+        "outputPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/diegonogueiradossantos/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Common/Yah.Hub.Common.csproj": {
+                "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/CrossCutting/Yah.Hub.Common/Yah.Hub.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Presentation/Yah.Hub.Api.Application/Yah.Hub.Api.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Presentation/Yah.Hub.Api.Application/Yah.Hub.Api.Application.csproj",
+        "projectName": "Yah.Hub.Api.Application",
+        "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Presentation/Yah.Hub.Api.Application/Yah.Hub.Api.Application.csproj",
+        "packagesPath": "/Users/diegonogueiradossantos/.nuget/packages/",
+        "outputPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Presentation/Yah.Hub.Api.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/diegonogueiradossantos/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Application/Yah.Hub.Marketplace.Application/Yah.Hub.Marketplace.Application.csproj": {
+                "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Application/Yah.Hub.Marketplace.Application/Yah.Hub.Marketplace.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Presentation/Yah.Hub.B2W.Api/Yah.Hub.B2W.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Presentation/Yah.Hub.B2W.Api/Yah.Hub.B2W.Api.csproj",
+        "projectName": "Yah.Hub.B2W.Api",
+        "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Presentation/Yah.Hub.B2W.Api/Yah.Hub.B2W.Api.csproj",
+        "packagesPath": "/Users/diegonogueiradossantos/.nuget/packages/",
+        "outputPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Presentation/Yah.Hub.B2W.Api/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/diegonogueiradossantos/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Application/Yah.Hub.Marketplace.B2W.Application/Yah.Hub.Marketplace.B2W.Application.csproj": {
+                "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Application/Yah.Hub.Marketplace.B2W.Application/Yah.Hub.Marketplace.B2W.Application.csproj"
+              },
+              "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Presentation/Yah.Hub.Api.Application/Yah.Hub.Api.Application.csproj": {
+                "projectPath": "/Users/diegonogueiradossantos/Workspace/Yah-hub-marketplace - cópia/Presentation/Yah.Hub.Api.Application/Yah.Hub.Api.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[6.0.29, 6.0.29]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.29, 6.0.29]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+/Users/diegonogueiradossantos/Workspace/Yah/Presentation/Yah.Hub.LeroyMerlin.Api/obj/Debug/net6.0/Yah.Hub.LeroyMerlin.Api.csproj.AssemblyReference.cache
+/Users/diegonogueiradossantos/Workspace/Yah/Presentation/Yah.Hub.LeroyMerlin.Api/obj/Debug/net6.0/Yah.Hub.LeroyMerlin.Api.GeneratedMSBuildEditorConfig.editorconfig
+/Users/diegonogueiradossantos/Workspace/Yah/Presentation/Yah.Hub.LeroyMerlin.Api/obj/Debug/net6.0/Yah.Hub.LeroyMerlin.Api.AssemblyInfoInputs.cache
+/Users/diegonogueiradossantos/Workspace/Yah/Presentation/Yah.Hub.LeroyMerlin.Api/obj/Debug/net6.0/Yah.Hub.LeroyMerlin.Api.AssemblyInfo.cs
+/Users/diegonogueiradossantos/Workspace/Yah/Presentation/Yah.Hub.LeroyMerlin.Api/obj/Debug/net6.0/Yah.Hub.LeroyMerlin.Api.csproj.CoreCompileInputs.cache
+/Users/diegonogueiradossantos/Workspace/Yah/Presentation/Yah.Hub.LeroyMerlin.Api/obj/Debug/net6.0/Yah.Hub.LeroyMerlin.Api.MvcApplicationPartsAssemblyInfo.cs
+/Users/diegonogueiradossantos/Workspace/Yah/Presentation/Yah.Hub.LeroyMerlin.Api/obj/Debug/net6.0/Yah.Hub.LeroyMerlin.Api.MvcApplicationPartsAssemblyInfo.cache
